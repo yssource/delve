@@ -10,7 +10,7 @@ import (
 	"golang.org/x/arch/x86/x86asm"
 )
 
-var maxInstructionLength uint64 = 15
+var MaxInstructionLength uint64 = 15
 
 type archInst x86asm.Inst
 

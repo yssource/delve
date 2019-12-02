@@ -8,7 +8,7 @@ import (
 	"golang.org/x/arch/arm64/arm64asm"
 )
 
-var maxInstructionLength uint64 = 4
+var MaxInstructionLength uint64 = 4
 
 type archInst arm64asm.Inst
 

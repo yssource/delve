@@ -85,7 +85,7 @@ func disassemble(memrw MemoryReadWriter, regs Registers, breakpoints *Breakpoint
 		return nil, err
 	}
 
-	r := make([]AsmInstruction, 0, len(mem)/int(maxInstructionLength))
+	r := make([]AsmInstruction, 0, len(mem)/int(MaxInstructionLength))
 	pc := startAddr
 
 	var curpc uint64
