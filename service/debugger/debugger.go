@@ -198,7 +198,7 @@ func (d *Debugger) FunctionReturnLocations(fnName string) ([]uint64, error) {
 			addrs = append(addrs, instruction.Loc.PC)
 		}
 	}
-	addrs = append(addrs, proc.FindDeferReturnCalls(instructions)...)
+	addrs = append(addrs, debug.FindDeferReturnCalls(instructions)...)
 
 	return addrs, nil
 }
